@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+  color: #fff;
+  background-color: #111;
+}
+
+header {
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.nav_left a {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.menu_toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav_right {
+  display: flex;
+  gap: 30px;
+}
+
+.nav_right a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav_right a:hover {
+  text-decoration: underline;
+}
+
+.header_title {
+  background-color: rgba(202, 202, 202, 0.247);
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.header_title h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.header_title p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.header_title a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.about {
+  padding: 60px 20px;
+  background-color: #222;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.about-title {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #77777780;
+  padding: 25px;
+  border-radius: 10px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 1024px) {
+  nav {
+    padding: 25px 30px;
+  }
+
+  .nav_right {
+    gap: 20px;
+  }
+
+  .header_title h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu_toggle {
+    display: block;
+  }
+
+  .nav_right {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .nav_right.show {
+    display: flex;
+  }
+
+  .nav_right a {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  .header_title h1 {
+    font-size: 28px;
+  }
+
+  .header_title p {
+    font-size: 16px;
+  }
+
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about-title {
+    font-size: 15px;
+  }
+}
+/* Bu global holatda yashiringan */
+.menu_toggle {
+  display: none;
+}
+
+/* Faqat kichik ekranlarda ko‘rinadigan qilamiz */
+@media (max-width: 768px) {
+  .menu_toggle {
+    display: block;
+  }
+
+  .nav_right {
+    display: none; /* menyu yashirin bo'ladi */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .nav_right.show {
+    display: flex; /* JS orqali ochiladi */
+  }
+}
