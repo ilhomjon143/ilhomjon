@@ -1,0 +1,197 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(./i\ \(1\).webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    background: linear-gradient(rgb(25rgb(252, 85, 85)9, 119) white) url(./image/photo_2025-02-22_15-26-27.jpg);
+}
+
+nav {
+    background-color: #8653ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.nav-left h2 {
+    color: #0000;
+    font-weight: 600;
+    font-size: 40px;
+    text-decoration: none;
+    align-items: end;
+}
+
+.nav-logo-title {
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+.btn a{
+    align-items: end;
+    color: #000000;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.nav-right ul {
+    display: flex;
+    justify-content:  ;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    list-style: none;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(216, 234, 255);
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.nimadir {
+ align-items: flex-end;
+
+   
+}
+
+.nav-right button {
+    padding: 3px;
+    width: 100px;
+    height: 35px;
+    background-color: #6aaceb;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px #0d0f08 solid;
+    border-radius: 20px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    align-items: end;
+    justify-content: ;
+}
+
+.nav-right button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.head-title {
+    margin-top: 50px;
+    height: 400px;
+    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.head-title h1 {
+    text-align: center;
+    line-height: 2rcap;
+}
+
+.button-group {
+    margin-top: 50px;
+
+}
+
+.button-group button {
+    padding: 3px;
+    margin-left: 40px;
+    width: 250px;
+    height: 45px;
+    background-color: #ebffe1a2;
+    color: rgba(62, 19, 255, 0.945);
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px #d3f3d696 solid;
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.button-group button a {
+    text-decoration: none;
+    color: #469cff;
+}
+
+.container {
+    background-image: url(./gif.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+   
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 1320px;
+    background-color: #43f2ff;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.card {
+    width: 390px;
+    height: 370px;
+    background-color: #76f6ff;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card head {
+    width: 370px;
+    height: 200px;
+    /* padding-left: 3px; */
+    padding-top: 3px;
+}
+.card-head img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+.card-body {
+margin-top: 10px;
+padding-top: 10px;
+}
+.card-body h1 {
+    text-align: center;
+    font-family: "Bebas Neue", serif;
+
+}
+.card-body p {
+    line-height: 1.2;
+    font-family: "Inter," serif;
+}
+button a{
+padding: 20%;
+
+}
